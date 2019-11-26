@@ -12,7 +12,7 @@ import Contact from "../landing/Contact"
 
 import Background from '../components/Background'
 import Container from '../components/Container'
-import SEO from "../components/seo"
+import SEO from "../components/SEO"
 
 import 'antd/dist/antd.css'
 import '../styles/global.css'
