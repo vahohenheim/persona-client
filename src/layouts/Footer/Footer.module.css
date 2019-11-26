@@ -1,0 +1,13 @@
+.container {
+    background: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.content {
+    font-size: 12px;
+    margin: 0;
+}

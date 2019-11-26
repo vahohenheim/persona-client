@@ -1,0 +1,33 @@
+.container {
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 0 20px;
+    z-index: 2;
+}
+
+.navigation {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    .navigation {
+        display: none;
+    }
+}
+
+.item {
+    font-weight: 400;
+    padding: 0 10px;
+    color: #888888;
+    transition: all .3s ease-in;
+}
