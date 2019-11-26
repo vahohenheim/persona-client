@@ -16,6 +16,7 @@ import SEO from "../components/SEO"
 
 import 'antd/dist/antd.css'
 import '../styles/global.css'
+import '../assets/fonts/styles.css'
 
 const Index = () => {
 
