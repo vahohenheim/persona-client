@@ -12,7 +12,7 @@ p, ul, li {
 
 .h1-subtitle {
     text-transform: uppercase;
-    font-family: GothamPro-Bold;
+    font-weight: 700;
     font-size: 20px;
     color: rgba(0,0,0,0.50);
     letter-spacing: 0.8px;
@@ -21,7 +21,7 @@ p, ul, li {
 .h3-subtitle {
     text-transform: uppercase;
     opacity: 0.5;
-    font-family: GothamPro-Bold;
+    font-weight: 700;
     font-size: 14px;
     letter-spacing: 0.71px;
     line-height: 30px;

@@ -1,19 +1,19 @@
 .h1 {
-    font-family: GothamPro-Black;
+    font-weight: 900;
     font-size: 50px;
     line-height: 57px;
     margin: 5px 0;
 }
 
 .h2 {
-    font-family: GothamPro-Black;
+    font-weight: 900;
     font-size: 36px;
     line-height: 42px;
     margin-bottom: 40px;
 }
 
 .h3 {
-    font-family: GothamPro-Bold;
+    font-weight: 900;
     font-size: 24px;
     line-height: 30px;
 }
