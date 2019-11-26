@@ -5,7 +5,7 @@ import Heading from "../../components/Heading"
 const Educations = () => {
 
     return (
-        <Row style={{ margin: '160px 0' }}>
+        <Row style={{ padding: '80px 0' }}>
             <Col span={24}>
                 <Heading tag="h2">J’ai étudié</Heading>
                 <div style={{ margin: '30px 0' }}>

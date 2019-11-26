@@ -9,7 +9,7 @@ import projectIcon from '../../assets/icons/project.svg'
 const Expertises = () => {
 
     return (
-        <Row name="expertises" style={{ margin: '160px 0' }}>
+        <Row name="expertises" style={{ padding: '80px 0' }}>
             <Col span={24}>
                 <Heading tag="h2">J'ai pu développer mon expertise en</Heading>
             </Col>

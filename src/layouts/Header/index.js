@@ -1,6 +1,6 @@
 import React from "react"
 import { Sticky } from 'react-sticky';
-import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import { Link, animateScroll as scroll } from 'react-scroll'
 
 import styles from './Header.module.css'
 
@@ -17,22 +17,22 @@ const Header = () => {
             <header style={style} className={styles.container} >
                 <img src={logo} alt="logo valentinbourreau" />
                 <ul className={styles.navigation}>
-                    <Link activeClass="active" to="about" spy={true} smooth={true} offset={-150} duration={1500} onSetActive={handleSetActive}>
+                    <Link activeClass="active" to="about" spy={true} smooth={true} offset={-100} duration={1200} onSetActive={handleSetActive}>
                         <li className={styles.item}>
                             à propos
                         </li>
                     </Link>
-                    <Link activeClass="active" to="expertises" spy={true} smooth={true} offset={-150} duration={1500} onSetActive={handleSetActive}>
+                    <Link activeClass="active" to="expertises" spy={true} smooth={true} offset={-150} duration={1200} onSetActive={handleSetActive}>
                         <li className={styles.item}>
                             expertises
                         </li>
                     </Link>
-                    <Link activeClass="active" to="works" spy={true} smooth={true} offset={-150} duration={1500} onSetActive={handleSetActive}>
+                    <Link activeClass="active" to="works" spy={true} smooth={true} duration={1200} onSetActive={handleSetActive}>
                         <li className={styles.item}>
                             productions
                         </li>
                     </Link>
-                    <Link activeClass="active" to="contact" spy={true} smooth={true} offset={-150} duration={1500} onSetActive={handleSetActive}>
+                    <Link activeClass="active" to="contact" spy={true} smooth={true} duration={1200} onSetActive={handleSetActive}>
                         <li className={styles.item}>
                             contact
                         </li>

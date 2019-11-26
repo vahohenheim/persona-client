@@ -11,7 +11,7 @@ import dailyui from '../../assets/images/dailyui.jpg'
 const Works = () => {
 
     return (
-        <Row name="works" style={{ margin: '160px 0' }}>
+        <Row name="works" style={{ padding: '80px 0' }}>
             <Col span={24}>
                 <Heading tag="h2">J’ai pu produire à titre personel</Heading>
             </Col>
