@@ -1,6 +1,6 @@
 import React from "react"
 import { Sticky } from 'react-sticky';
-import { Link, animateScroll as scroll } from 'react-scroll'
+import { Link } from 'react-scroll'
 
 import styles from './Header.module.css'
 

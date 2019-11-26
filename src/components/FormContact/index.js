@@ -17,7 +17,7 @@ const FormContact = ({ form }) => {
     };
 
     return (
-        <Form onSubmit={handleSubmit} >
+        <Form style={{ margin: '0 -15px' }} onSubmit={handleSubmit} >
             <Form.Item label="Votre nom" hasFeedback>
                 {getFieldDecorator('name', {
                     rules: [{ required: true, message: 'Veuillez renseigner votre nom' }],
@@ -40,7 +40,7 @@ const FormContact = ({ form }) => {
                 )}
             </Form.Item>
             <Form.Item>
-                <Button type="primary" htmlType="submit">
+                <Button type="primary" htmlType="submit" size="large" block>
                     Envoyer votre message
                 </Button>
             </Form.Item>

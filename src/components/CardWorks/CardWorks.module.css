@@ -1,5 +1,6 @@
-.card {
+.container {
     cursor: pointer;
+    padding: 0 0 20px 0;
 }
 
 .img {
@@ -9,6 +10,11 @@
     width: 100%;
     object-fit: cover;
     transition: all .2s ease-in;
+}
+
+.title {
+    margin-top: 10px;
+    margin-bottom: 0;
 }
 
 .card:hover .img {

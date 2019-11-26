@@ -2,11 +2,11 @@ import React from "react"
 
 import styles from './Heading.module.css'
 
-const Heading = ({ tag, children, style }) => {
+const Heading = ({ tag, children, ...props }) => {
 
     return React.createElement(tag, {
-        className: styles[tag],
-        style: style
+        ...props,
+        className: `${props.className} ${styles[tag]}`
     }, children)
 
 } 
