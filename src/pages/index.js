@@ -35,7 +35,7 @@ const Index = () => {
                 <Educations />
                 <Contact />
             </Container>
-            <Footer/>
+            <Footer />
         </StickyContainer>
     )
 } 
