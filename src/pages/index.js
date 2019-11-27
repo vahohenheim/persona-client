@@ -10,6 +10,7 @@ import Experiences from "../landing/Experiences"
 import Educations from "../landing/Educations"
 import Contact from "../landing/Contact"
 
+import Launching from "../components/Launching"
 import Background from '../components/Background'
 import Container from '../components/Container'
 import SEO from "../components/SEO"
@@ -23,6 +24,7 @@ const Index = () => {
     return (
         <StickyContainer style={{ position: 'relative' }}>
             <SEO title="valentinbourreau" description="a website for show my works and my expertises" />
+            {/*<Launching />*/}
             <Background />
             <Header />
             <Container>

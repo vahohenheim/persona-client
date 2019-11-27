@@ -14,6 +14,7 @@ p, ul, li {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 20px;
+    line-height: 26px;
     color: rgba(0,0,0,0.50);
     letter-spacing: 0.8px;
 }
@@ -23,8 +24,8 @@ p, ul, li {
     opacity: 0.5;
     font-weight: 700;
     font-size: 14px;
-    letter-spacing: 0.71px;
-    line-height: 30px;
+    letter-spacing: 0.7px;
+    line-height: 24px;
 }
 
 .active li {
@@ -34,4 +35,24 @@ p, ul, li {
 
 .ant-col {
     padding: 0 15px;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    p, ul, li {
+        line-height: 23px;
+        font-size: 13px;
+    }
+    
+    .h1-subtitle {
+        font-size: 15px;
+        letter-spacing: 0.6px;
+        line-height: 30px;
+    }
+    
+    .h3-subtitle {
+        font-size: 12px;
+        letter-spacing: 0.5px;
+        line-height: 10px;
+    }
 }
