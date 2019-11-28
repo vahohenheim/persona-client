@@ -1,6 +1,7 @@
 body {
     height: 100%;
-    color: #000000;
+    background-color: #000000;
+    color: #CDCDCD;
     font-family: "Gotham", sans-serif;
     position: relative;
 }
@@ -15,7 +16,7 @@ p, ul, li {
     font-weight: 700;
     font-size: 20px;
     line-height: 26px;
-    color: rgba(0,0,0,0.50);
+    color: #CDCDCD;
     letter-spacing: 0.8px;
 }
 
@@ -26,15 +27,37 @@ p, ul, li {
     font-size: 14px;
     letter-spacing: 0.7px;
     line-height: 24px;
+    color: #CDCDCD;
 }
 
 .active li {
     font-weight: 500;
-    color: #000000;
+    color: #FFFFFF;
+}
+
+.bold {
+    font-weight: 700;
 }
 
 .ant-col {
     padding: 0 15px;
+}
+
+.ant-form {
+    text-align: left;
+}
+
+.ant-form-item-label > label {
+    color: #CDCDCD;
+}
+
+.ant-input {
+    background-color: #090909;
+    color: #454545;
+}
+
+.ant-input:focus, .has-error .ant-input, .has-error .ant-input:hover, .ant-input:hover {
+    background-color: #090909;
 }
 
 /* Medium devices (landscape tablets, 768px and up) */

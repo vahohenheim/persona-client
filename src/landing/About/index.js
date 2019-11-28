@@ -1,24 +1,31 @@
 import React from "react"
-import { Row, Col } from 'antd'
+import { Link } from 'react-scroll'
+import { Row, Col, Button } from 'antd'
 
 import Heading from "../../components/Heading"
+import Container from "../../components/Container"
 
 import styles from './About.module.css'
 
 const About = () => {
 
     return (
-        <div name="about" className={styles.container}>
+        <Container name="about" className={styles.container}>
             <Row>
-                <Col md={18}>
-                    <span className="h1-subtitle">Développeur front-end créatif</span>
-                    <Heading tag="h1">Je pense, design et crée des émotions pour le web</Heading>
+                <Col md={24}>
+                    <span className="h1-subtitle">Creative front-end developer</span>
+                    <Heading tag="h1">a multidisciplinary web artisan with a focus on design & react dev</Heading>
                 </Col>
                 <Col md={22}>
-                    <p>Je suis un jeune développeur front-end, à la recherche de mon premier emploi. J’ai toujours était passionné par le web et sa valeur en tant qu’outil universel. En tant qu’artisan du web, j’ai étoffé mon savoir-faire en décortiquant cet outil sous tous ses coutures durant les 6 dernières années : UI/UX Design, Développement Front-end, Développement Back-end et la gestion de projet infomatique.</p>
+                    <p>I am a junior developer, based on Nantes. I’m locking for my first full-time job and i’m available for international opportunity. I’m always be passionate by the web environment and its value as a universal tool. As a web crafter, i develop my expertises on different domains in last 6 years : UI/UX design, front-end development, back-end development and project management.</p>
+                    <Link to="contact" spy={true} smooth={true} duration={1000}>
+                        <Button className={styles.button} ghost>contact me</Button>
+                    </Link>
+                    <Button className={styles.button} type="link" ghost>show my resume</Button>
                 </Col>
+                
             </Row>
-        </div>
+        </Container>
     )
 
 } 

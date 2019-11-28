@@ -27,14 +27,10 @@ const Index = () => {
             {/*<Launching />*/}
             <Background />
             <Header />
-            <Container>
-                <About />
-                <Expertises />
-                <Works />
-                <Experiences />
-                <Educations />
-                <Contact />
-            </Container>
+            <About />
+            <Expertises />
+            <Works />
+            <Contact />
             <Footer />
         </StickyContainer>
     )

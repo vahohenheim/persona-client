@@ -9,10 +9,10 @@
 }
 
 .column {
-    border-left: 1px #F5F5F5 solid;
+    border-left: 1px rgb(26, 26, 26) solid;
     height: 100%;
 }
 
 .column:last-child {
-    border-right: 1px #F5F5F5 solid;
+    border-right: 1px rgb(26, 26, 26) solid;
 }

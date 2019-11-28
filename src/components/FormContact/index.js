@@ -1,7 +1,10 @@
 import React from "react"
 import { Form, Input, Button } from 'antd'
 
+import styles from './FormContact.module.css'
+
 const { TextArea } = Input;
+
 
 const FormContact = ({ form }) => {
 
@@ -17,31 +20,40 @@ const FormContact = ({ form }) => {
     };
 
     return (
-        <Form style={{ margin: '0 -15px' }} onSubmit={handleSubmit} >
-            <Form.Item label="Votre nom" hasFeedback>
+        <Form style={{  }} onSubmit={handleSubmit} >
+            <Form.Item label="Your name" hasFeedback>
                 {getFieldDecorator('name', {
-                    rules: [{ required: true, message: 'Veuillez renseigner votre nom' }],
+                    rules: [{ required: true, message: 'Please, enter a name' }],
                 })(
-                    <Input size="large" />,
+                    <Input className={styles.input} size="large" />,
                 )}
             </Form.Item>
-            <Form.Item label="Votre adresse mail" hasFeedback>
+            <Form.Item label="Your mail adress" hasFeedback>
                 {getFieldDecorator('email', {
-                    rules: [{ required: true, message: 'Veuillez renseigner votre adresse mail' }],
+                    rules: [
+                        { 
+                            type: 'email',
+                            message: 'Your input is not valid mail adress ',
+                        },
+                        { 
+                            required: true, 
+                            message: 'Please, enter a mail adress' 
+                        },
+                    ],
                 })(
-                    <Input size="large" />,
+                    <Input type="email" size="large" />,
                 )}
             </Form.Item>
-            <Form.Item label="Votre message" hasFeedback>
+            <Form.Item label="Your message" hasFeedback>
                 {getFieldDecorator('Votre message', {
-                    rules: [{ required: true, message: 'Veuillez renseigner votre message' }],
+                    rules: [{ required: true, message: 'Please, enter a message' }],
                 })(
                     <TextArea size="large" rows={6} />,
                 )}
             </Form.Item>
             <Form.Item>
                 <Button type="primary" htmlType="submit" size="large" block>
-                    Envoyer votre message
+                    Send me a message
                 </Button>
             </Form.Item>
         </Form>

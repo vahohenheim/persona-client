@@ -1,8 +1,12 @@
 .container {
-    min-height: 100vh;
+    min-height: calc(100vh - 70px);
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.button {
+    margin-right: 10px;
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
