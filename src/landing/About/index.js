@@ -5,6 +5,8 @@ import { Row, Col, Button } from 'antd'
 import Heading from "../../components/Heading"
 import Container from "../../components/Container"
 
+import scroll from "../../assets/icons/scroll.svg"
+
 import styles from './About.module.css'
 
 const About = () => {
@@ -23,8 +25,11 @@ const About = () => {
                     </Link>
                     <Button className={styles.button} type="link" ghost>show my resume</Button>
                 </Col>
-                
             </Row>
+            <div className={styles.containerScroll}>
+                    <img src={scroll} alt="icon for invite to scroll"/>
+                    <p>scroll for discover</p>
+                </div>
         </Container>
     )
 
