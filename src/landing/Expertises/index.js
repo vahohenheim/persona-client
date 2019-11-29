@@ -22,7 +22,9 @@ const Expertises = () => {
                         <Heading tag="h2">I am a multi-device front-end developer</Heading>
                         <p>I'm pass my 4 years to specialize my development skill in that part. Give live to experiences.</p>
                     </Col>
-                    <Col sm={12} lg={8}>
+                </Row>
+                <Row type="flex" justify="center">
+                    <Col span={18} sm={12} lg={8}>
                         <CardExpertises
                             imgSrc={desktopIcon}
                             imgAlt="icon desktop"
@@ -30,7 +32,7 @@ const Expertises = () => {
                             content="React, redux, rxjs, gatsby, hugo, polymer, laravel, nodejs, webpack, angular, sass, jamstack, solutions cloud."
                         />
                     </Col>
-                    <Col sm={12} lg={8}>
+                    <Col span={18} sm={12} lg={8}>
                         <CardExpertises
                             imgSrc={mobileIcon}
                             imgAlt="icon mobile"
@@ -38,7 +40,7 @@ const Expertises = () => {
                             content="React Native, ionic, expo."
                         />
                     </Col>
-                    <Col sm={12} lg={8}>
+                    <Col span={18} sm={12} lg={8}>
                         <CardExpertises
                             imgSrc={editorialIcon}
                             imgAlt="icon editorial"
