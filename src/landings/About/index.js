@@ -1,12 +1,10 @@
-import React from "react"
+import React from 'react'
 import { Link } from 'react-scroll'
 import { Row, Col, Button } from 'antd'
+import { Heading, Container } from 'components'
 import Fade from 'react-reveal/Fade'
 
-import Heading from "../../components/Heading"
-import Container from "../../components/Container"
-
-import scroll from "../../assets/icons/scroll.svg"
+import scroll from "assets/icons/scroll.svg"
 
 import styles from './About.module.css'
 

@@ -1,10 +1,7 @@
-import React from "react"
+import React from 'react'
 import { Row, Col } from 'antd'
 import Fade from 'react-reveal/Fade'
-
-import Heading from "../../components/Heading"
-import FormContact from "../../components/FormContact"
-import Container from "../../components/Container"
+import { Heading, Container, FormContact } from 'components'
 
 const Contact = () => {
 

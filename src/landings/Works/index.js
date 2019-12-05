@@ -1,15 +1,12 @@
-import React from "react"
+import React from 'react'
 import { Row, Col } from 'antd'
+import { Heading, CardWorks, Container } from 'components'
 import Fade from 'react-reveal/Fade'
 
-import CardWorks from "../../components/CardWorks"
-import Heading from "../../components/Heading"
-
-import bicloon from '../../assets/images/bicloon.jpg'
-import monument from '../../assets/images/monument.jpg'
-import tandem from '../../assets/images/tandem.jpg'
-import dailyui from '../../assets/images/dailyui.jpg'
-import Container from "../../components/Container"
+import bicloon from 'assets/images/bicloon.jpg'
+import monument from 'assets/images/monument.jpg'
+import tandem from 'assets/images/tandem.jpg'
+import dailyui from 'assets/images/dailyui.jpg'
 
 const Works = () => {
 
@@ -25,7 +22,7 @@ const Works = () => {
                     <Fade delay={1000}>
                         <CardWorks 
                             imgSrc={bicloon}
-                            link="bicloon"
+                            link="/bicloon/"
                             imgAlt="miniature bicloon"
                             title="Bicloon"
                             content="Application de location de vélo et de guide touristique sur Nantes."
@@ -38,7 +35,7 @@ const Works = () => {
                     <Fade delay={1500}>
                         <CardWorks 
                             imgSrc={tandem}
-                            link="tandem"
+                            link="/tandem/"
                             imgAlt="miniature tandem"
                             title="Tandem"
                             content="Site web d'une association d'assistance psychologique de 3 à 25 ans."
@@ -50,7 +47,7 @@ const Works = () => {
                     <Fade delay={2000}>
                         <CardWorks 
                             imgSrc={monument}
-                            link="monument"
+                            link="/monument/"
                             imgAlt="miniature monument"
                             title="Monument"
                             content="Série d'illustration produite sur Illustrator."
@@ -62,7 +59,7 @@ const Works = () => {
                     <Fade delay={2000}>
                         <CardWorks 
                             imgSrc={dailyui}
-                            link="dailyui"
+                            link="/dailyui/"
                             imgAlt="miniature dailyui"
                             title="Daily UI"
                             content="Participation au challenge pour pratiquer le design."

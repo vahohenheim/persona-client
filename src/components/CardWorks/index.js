@@ -1,6 +1,6 @@
-import React from "react"
-import { Link } from "gatsby"
-import Heading from "../Heading"
+import React from 'react'
+import { Link } from 'gatsby'
+import { Heading } from 'components'
 
 import styles from './CardWorks.module.css'
 

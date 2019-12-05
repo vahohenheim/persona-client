@@ -1,18 +1,15 @@
-import React from "react"
+import React from 'react'
 import { Row, Col, Button } from 'antd'
+import { Heading, CardExpertises, Container } from 'components'
 import Fade from 'react-reveal/Fade'
 
-import Heading from "../../components/Heading"
-import CardExpertises from "../../components/CardExpertises"
-import Container from "../../components/Container"
-
-import desktopIcon from '../../assets/icons/desktop.svg'
-import mobileIcon from '../../assets/icons/mobile.svg'
-import editorialIcon from '../../assets/icons/editorial.svg'
+import desktopIcon from 'assets/icons/desktop.svg'
+import mobileIcon from 'assets/icons/mobile.svg'
+import editorialIcon from 'assets/icons/editorial.svg'
 
 import styles from './Expertises.module.css'
 
-import background from "../../assets/images/design.png"
+import background from "assets/images/design.png"
 
 const Expertises = () => {
 

@@ -1,11 +1,11 @@
-import React from "react"
+import React from 'react'
 import { Sticky } from 'react-sticky'
 import { Link } from 'react-scroll'
 import Fade from 'react-reveal/Fade'
 
 import styles from './Header.module.css'
 
-import logo from '../../assets/icons/valentinbourreau.svg'
+import logo from 'assets/icons/valentinbourreau.svg'
 
 const Header = () => {
 

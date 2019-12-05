@@ -1,10 +1,9 @@
-import React from "react"
+import React from 'react'
 import { Form, Input, Button } from 'antd'
 
 import styles from './FormContact.module.css'
 
 const { TextArea } = Input;
-
 
 const FormContact = ({ form }) => {
 
