@@ -9,9 +9,16 @@
 .containerScroll {
     position: absolute;
     bottom: 0;
-    left: 50%;
     transform: translateX(-50%);
     text-align: center;
+}
+
+.containerScroll p {
+    font-size: 12px;
+}
+
+.bold {
+    font-weight: 700;
 }
 
 .button {

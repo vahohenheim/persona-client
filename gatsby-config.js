@@ -1,3 +1,5 @@
+const path = require(`path`)
+
 module.exports = {
   siteMetadata: {
     title: `Portfolio`,
@@ -5,6 +7,40 @@ module.exports = {
     author: `valentinbourreau`,
   },
   plugins: [
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+          path: path.join(__dirname, `src`, `assets`, `images`),
+          name: `images`,
+      },
+    },
+    {
+        resolve: 'gatsby-plugin-root-import',
+        options: {
+            src: path.join(__dirname, 'src'),
+            components: path.join(__dirname, 'src/components'),
+            landings: path.join(__dirname, 'src/landings'),
+            layouts: path.join(__dirname, 'src/layouts'),
+            assets: path.join(__dirname, 'src/assets'),
+            styles: path.join(__dirname, 'src/styles'),
+        }
+    },
+    {
+      resolve: 'gatsby-plugin-antd',
+      options: {
+        style: true
+      }
+    },
+    {
+      resolve: "gatsby-plugin-less",
+      options: {
+        javascriptEnabled: true,
+        modifyVars: {
+          "primary-color": "#D9BAA4",
+          'link-color': '#D9BAA4',
+        }
+      }
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

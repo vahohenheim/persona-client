@@ -1,24 +1,11 @@
-import React from "react"
-import { StickyContainer } from 'react-sticky';
+import React from 'react'
+import { StickyContainer } from 'react-sticky'
+import { Heading, SEO, Container, Background } from 'components'
+import { Header, Footer } from 'layouts'
 
-import Header from "../layouts/Header"
-import Footer from "../layouts/Footer"
-import About from "../landing/About"
-import Expertises from "../landing/Expertises"
-import Works from "../landing/Works"
-import Experiences from "../landing/Experiences"
-import Educations from "../landing/Educations"
-import Contact from "../landing/Contact"
+import 'styles/main.less'
+import 'assets/fonts/styles.css'
 
-import Launching from "../components/Launching"
-import Background from '../components/Background'
-import Container from '../components/Container'
-import SEO from "../components/SEO"
-
-import 'antd/dist/antd.css'
-import '../styles/global.css'
-import '../assets/fonts/styles.css'
-import Heading from "../components/Heading";
 
 const Index = () => {
 

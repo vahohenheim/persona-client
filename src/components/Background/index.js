@@ -1,7 +1,6 @@
-import React from "react"
+import React from 'react'
 import { Row, Col } from 'antd'
-
-import Container from "../Container"
+import { Container } from 'components'
 
 import styles from './Background.module.css'
 

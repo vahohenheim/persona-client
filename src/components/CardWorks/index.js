@@ -1,11 +1,11 @@
-import React from "react"
-import { Link } from "gatsby"
-import Heading from "../Heading"
+import React from 'react'
+import { Link } from 'gatsby'
+import { Heading } from 'components'
 
 import styles from './CardWorks.module.css'
 
 const CardWorks = ({ imgSrc, imgAlt, title, expertises, content, link }) => {
-console.log(expertises.length)
+
     return (
         <Link to={link}>
             <div className={styles.container}>
