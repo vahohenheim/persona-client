@@ -5,7 +5,7 @@ import Heading from "../Heading"
 import styles from './CardWorks.module.css'
 
 const CardWorks = ({ imgSrc, imgAlt, title, expertises, content, link }) => {
-console.log(expertises.length)
+
     return (
         <Link to={link}>
             <div className={styles.container}>

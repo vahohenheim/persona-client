@@ -8,11 +8,11 @@ import Expertises from "../landing/Expertises"
 import Works from "../landing/Works"
 import Contact from "../landing/Contact"
 
+import Launching from '../components/Launching'
 import Background from '../components/Background'
 import SEO from "../components/SEO"
 
-import 'antd/dist/antd.css'
-import '../styles/global.css'
+import '../styles/main.less'
 import '../assets/fonts/styles.css'
 
 const Index = () => {
@@ -20,6 +20,7 @@ const Index = () => {
     return (
         <StickyContainer style={{ position: 'relative' }}>
             <SEO title="valentinbourreau" description="a website for show my works and my expertises" />
+            {/* <Launching /> */}
             <Background />
             <Header />
             <About />

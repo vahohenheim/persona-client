@@ -6,6 +6,22 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: 'gatsby-plugin-antd',
+      options: {
+        style: true
+      }
+    },
+    {
+      resolve: "gatsby-plugin-less",
+      options: {
+        javascriptEnabled: true,
+        modifyVars: {
+          "primary-color": "#D9BAA4",
+          'link-color': '#D9BAA4',
+        }
+      }
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `valentinbourreau`,

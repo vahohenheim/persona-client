@@ -15,8 +15,7 @@ import Background from '../components/Background'
 import Container from '../components/Container'
 import SEO from "../components/SEO"
 
-import 'antd/dist/antd.css'
-import '../styles/global.css'
+import '../styles/main.less'
 import '../assets/fonts/styles.css'
 import Heading from "../components/Heading";
 

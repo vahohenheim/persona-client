@@ -1,6 +1,7 @@
 import React from "react"
-import { Sticky } from 'react-sticky';
+import { Sticky } from 'react-sticky'
 import { Link } from 'react-scroll'
+import Fade from 'react-reveal/Fade'
 
 import styles from './Header.module.css'
 
@@ -8,36 +9,38 @@ import logo from '../../assets/icons/valentinbourreau.svg'
 
 const Header = () => {
 
-    const handleSetActive = (to) => {
-        console.log(to)
-    }
-
     return (
         <Sticky>{({ style }) => (
             <header style={style} className={styles.container} >
-                <img src={logo} alt="logo valentinbourreau" />
-                <ul className={styles.navigation}>
-                    <Link activeClass="active" to="about" spy={true} smooth={true} offset={-100} duration={1200} onSetActive={handleSetActive}>
-                        <li className={styles.item}>
-                            about
-                        </li>
-                    </Link>
-                    <Link activeClass="active" to="expertises" spy={true} smooth={true} offset={-150} duration={1200} onSetActive={handleSetActive}>
-                        <li className={styles.item}>
-                            skills
-                        </li>
-                    </Link>
-                    <Link activeClass="active" to="works" spy={true} smooth={true} offset={-150} duration={1200} onSetActive={handleSetActive}>
-                        <li className={styles.item}>
-                            works
-                        </li>
-                    </Link>
-                    <Link activeClass="active" to="contact" spy={true} smooth={true} duration={1200} onSetActive={handleSetActive}>
-                        <li className={styles.item}>
-                            contact
-                        </li>
-                    </Link>
-                </ul>
+                <Fade delay={1000}>
+                    <img src={logo} alt="logo valentinbourreau" />
+                </Fade>
+                <Fade delay={1500}>
+                    <ul className={styles.navigation}>
+                        <Link activeClass="active" to="about" spy={true} smooth={true} offset={-100} duration={1200}>
+                            <li className={styles.item}>
+                                about
+                            </li>
+                        </Link>
+                        <Link activeClass="active" to="expertises" spy={true} smooth={true} offset={-150} duration={1200}>
+                            <li className={styles.item}>
+                                skills
+                            </li>
+                        </Link>
+                        <Link activeClass="active" to="works" spy={true} smooth={true} offset={-150} duration={1200}>
+                            <li className={styles.item}>
+                                works
+                            </li>
+                        </Link>
+                        <Link activeClass="active" to="contact" spy={true} smooth={true} duration={1200}>
+                            <li className={styles.item}>
+                                contact
+                            </li>
+                        </Link>
+                    </ul>
+                </Fade>
+                
+                
             </header>
         )}
         </Sticky>
