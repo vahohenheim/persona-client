@@ -1,11 +1,14 @@
 import React from "react"
 import { StickyContainer } from 'react-sticky'
+import config from 'react-reveal/globals'
 import { Launching, SEO, Background } from 'components'
 import { Header, Footer } from 'layouts'
 import { About, Expertises, Works, Contact } from 'landings'
 
 import 'styles/main.less'
 import 'assets/fonts/styles.css'
+
+config({ ssrFadeout: true })
 
 const Index = () => {
 
