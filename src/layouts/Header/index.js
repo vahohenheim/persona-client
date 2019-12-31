@@ -19,17 +19,17 @@ const Header = () => {
                     <ul className={styles.navigation}>
                         <Link activeClass="active" to="about" spy={true} smooth={true} offset={-100} duration={1200}>
                             <li className={styles.item}>
-                                about
+                                à propos
                             </li>
                         </Link>
                         <Link activeClass="active" to="expertises" spy={true} smooth={true} offset={-150} duration={1200}>
                             <li className={styles.item}>
-                                skills
+                                compétences
                             </li>
                         </Link>
                         <Link activeClass="active" to="works" spy={true} smooth={true} offset={-150} duration={1200}>
                             <li className={styles.item}>
-                                works
+                                travaux
                             </li>
                         </Link>
                         <Link activeClass="active" to="contact" spy={true} smooth={true} duration={1200}>

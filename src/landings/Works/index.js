@@ -11,11 +11,11 @@ import dailyui from 'assets/images/dailyui.jpg'
 const Works = () => {
 
     return (
-        <Container style={{ padding: '80px 0' }}>
+        <Container style={{ margin: '80px auto' }}>
             <Row name="works">
                 <Col span={24}>
                     <Fade delay={500}>
-                        <Heading style={{ marginBottom: '40px' }} tag="h2">What i made</Heading>
+                        <Heading style={{ marginBottom: '40px' }} tag="h2">J'ai travaillé sur</Heading>
                     </Fade>
                 </Col>
                 <Col sm={12} lg={8}>
@@ -25,7 +25,7 @@ const Works = () => {
                             link="/bicloon/"
                             imgAlt="miniature bicloon"
                             title="Bicloon"
-                            content="Application de location de vélo et de guide touristique sur Nantes."
+                            content="Une appli de location de vélo et guide touristique sur Nantes"
                             expertises={["UX Design", "UI Design"]}
                         />
                     </Fade>
@@ -38,7 +38,7 @@ const Works = () => {
                             link="/tandem/"
                             imgAlt="miniature tandem"
                             title="Tandem"
-                            content="Site web d'une association d'assistance psychologique de 3 à 25 ans."
+                            content="Un site éditorial pour une association"
                             expertises={["UX Design", "UI Design", "Développement Wordpress"]}
                         />
                     </Fade>
@@ -50,7 +50,7 @@ const Works = () => {
                             link="/monument/"
                             imgAlt="miniature monument"
                             title="Monument"
-                            content="Série d'illustration produite sur Illustrator."
+                            content="Série d’illustration de monuments"
                             expertises={["UI Design"]}
                         />
                     </Fade>
@@ -62,7 +62,7 @@ const Works = () => {
                             link="/dailyui/"
                             imgAlt="miniature dailyui"
                             title="Daily UI"
-                            content="Participation au challenge pour pratiquer le design."
+                            content="Participation au challenge pour pratiquer le design"
                             expertises={["UX Design", "UI Design"]}
                         />
                     </Fade>

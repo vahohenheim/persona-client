@@ -6,6 +6,8 @@ import Fade from 'react-reveal/Fade'
 
 import scroll from "assets/icons/scroll.svg"
 
+import main from "assets/images/main.jpg"
+
 import styles from './About.module.css'
 
 const About = () => {
@@ -13,23 +15,27 @@ const About = () => {
     return (   
         <Container name="about" className={styles.container}>
             <Fade delay={2000}>
-                <Row>
-                    <Col md={24}>
-                        <Heading tag="h1">I'm a multidisciplinary web artisan focused on <span className={styles.bold}>design & react dev</span></Heading>
-                    </Col>
-                    <Col md={22}>
-                        <p>I am a junior developer, based on Nantes. I’m locking for my first full-time job and i’m available for international opportunity.</p>
+                <Row className={styles.wrapper}>
+                    <div className={styles.title}>
+                        <Heading tag="h1">Je suis un jeune artisan du web, centré sur le <span className={styles.highlight}>développement front-end</span></Heading>
+                        <p>Je suis basé sur Nantes à la recherche de mon premier emploi après 6 années d’études, effectués en apprentissage.</p>
                         <Link to="contact" spy={true} smooth={true} duration={1000}>
-                            <Button className={styles.button} ghost>contact me</Button>
+                            <Button className={styles.button}>contactez-moi</Button>
                         </Link>
-                        <Button className={styles.button} type="link" ghost>show my resume</Button>
-                    </Col>
+                        <Button className={styles.button} type="link">voir mon curriculum vitae</Button>
+                    </div>
+                    <div>
+                        <figure className={styles.figure}>
+                            <img src={main} alt='Tableau "Haystacks" de Camille Pissarro' />
+                            <figcaption>© Haystacks, Morning, Éragny, Camille Pissarro, 1899</figcaption>
+                        </figure>
+                    </div>
                 </Row>
             </Fade>
             <Fade top delay={3000}>
                 <div className={styles.containerScroll}>
                     <img src={scroll} alt="icon for invite to scroll"/>
-                    <p>scroll for discover</p>
+                    <p>scroller pour découvrir</p>
                 </div>
             </Fade>
         </Container>

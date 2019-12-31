@@ -10,12 +10,9 @@ const Background = () => {
         <div className={styles.container}>
             <Container className={styles.wrapper}>
                 <Row className={styles.wrapper}>
-                    <Col span={4} className={styles.column} />
-                    <Col span={4} className={styles.column} />
-                    <Col span={4} className={styles.column} />
-                    <Col span={4} className={styles.column} />
-                    <Col span={4} className={styles.column} />
-                    <Col span={4} className={styles.column} />
+                    <Col span={8} className={styles.column} />
+                    <Col span={8} className={styles.column} />
+                    <Col span={8} className={styles.column} />
                 </Row>
             </Container>
         </div>

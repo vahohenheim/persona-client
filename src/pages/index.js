@@ -1,7 +1,7 @@
 import React from "react"
 import { StickyContainer } from 'react-sticky'
 import config from 'react-reveal/globals'
-import { Launching, SEO, Background } from 'components'
+import { SEO } from 'components'
 import { Header, Footer } from 'layouts'
 import { About, Expertises, Works, Contact } from 'landings'
 
@@ -15,8 +15,6 @@ const Index = () => {
     return (
         <StickyContainer style={{ position: 'relative' }}>
             <SEO title="valentinbourreau" description="a website for show my works and my expertises" />
-            {/* <Launching /> */}
-            <Background />
             <Header />
             <About />
             <Expertises />

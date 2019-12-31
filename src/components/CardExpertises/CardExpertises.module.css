@@ -1,6 +1,14 @@
 .container {
     padding: 40px 0 40px 0;
-    text-align: center;
+}
+
+
+.container hr {
+    height: 4px;
+    width: 40px;
+    background-color: #D9BAA4;
+    border: none;
+    margin-left: 0px;
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
