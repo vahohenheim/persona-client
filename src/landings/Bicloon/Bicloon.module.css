@@ -1,0 +1,42 @@
+.container {
+    margin: 0px auto 100px auto;
+}
+
+.back {
+    font-weight: 600;
+}
+
+.header {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.row {
+    margin: 100px auto;
+}
+
+.mainImg {
+    height: 300px;
+    margin-bottom: 40px;
+}
+
+.fonctionnality {
+    margin: 100px auto;
+}
+
+.fonctionnality h2 {
+    margin-bottom: 20px;
+}
+
+.card {
+    height: 200px;
+    background-color: rgba(255,255, 225,.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    padding: 20px;
+    border-radius: 20px;
+}

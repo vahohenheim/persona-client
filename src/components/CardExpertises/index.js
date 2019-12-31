@@ -8,6 +8,7 @@ const CardExpertises = ({ imgSrc, imgAlt, title, content }) => {
     return (
         <div className={styles.container}>
              <img src={imgSrc} alt={imgAlt} />
+             <hr/>
              <Heading className={styles.title} tag="h3">{title}</Heading>
              <p>{content}</p>
          </div>

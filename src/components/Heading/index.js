@@ -6,7 +6,7 @@ const Heading = ({ tag, children, ...props }) => {
 
     return React.createElement(tag, {
         ...props,
-        className: `${props.className} ${styles[tag]}`
+        className: `${styles[tag]} ${props.className}`
     }, children)
 
 } 

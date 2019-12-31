@@ -1,4 +1,5 @@
 export { default as About } from './About'
+export { default as Bicloon } from './Bicloon'
 export { default as Contact } from './Contact'
 export { default as Educations } from './Educations'
 export { default as Experiences } from './Experiences'

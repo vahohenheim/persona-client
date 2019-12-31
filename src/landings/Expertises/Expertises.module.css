@@ -2,13 +2,12 @@
     position: relative;
 }
 
-.containerCentred {
+.wrapper {
     padding: 80px 0 20px 0;
-    text-align: center
 }
 
-.containerBackground {
-    padding: 140px 0 160px 0;
+.wrapperBackground {
+    padding: 140px 0 100px 0;
     z-index: 2;
     position: relative;
 }

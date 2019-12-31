@@ -10,9 +10,10 @@ const CardWorks = ({ imgSrc, imgAlt, title, expertises, content, link }) => {
         <Link to={link}>
             <div className={styles.container}>
                 <img className={styles.img} src={imgSrc} alt={imgAlt} />
-                <Heading className={styles.title} tag="h3">{title}</Heading>
-                <span className="h3-subtitle">{expertises.map((expertise, index) => `${expertise}${index + 1 === expertises.length ? '' : ', '}`)}</span>
-                <p>{content}</p>
+                <div className={styles.content}>
+                    <span className={styles.subtitle}>{expertises.map((expertise, index) => `${expertise}${index + 1 === expertises.length ? '' : ', '}`)}</span>
+                    <Heading className={styles.title} tag="h3">{content}</Heading>
+                </div>
             </div>
         </Link>
     )
