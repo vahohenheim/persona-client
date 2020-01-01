@@ -1,8 +1,6 @@
-export { default as Background } from './Background'
 export { default as CardExpertises } from './CardExpertises'
 export { default as CardWorks } from './CardWorks'
 export { default as Container } from './Container'
 export { default as FormContact } from './FormContact'
 export { default as Heading } from './Heading'
-export { default as Launching } from './Launching'
 export { default as SEO } from './SEO'
