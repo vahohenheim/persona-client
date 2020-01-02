@@ -23,6 +23,11 @@
     .navigation {
         display: none;
     }
+
+    .container {
+        justify-content: center;
+        align-items: flex-end;
+    }
 }
 
 .item {

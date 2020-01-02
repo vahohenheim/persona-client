@@ -27,7 +27,8 @@
 }
 
 .figure figcaption {
-    margin-top: 5px;
+    margin: 5px 5px 0 0;
+    font-size: 10px;
 }
 
 .containerScroll {

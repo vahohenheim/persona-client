@@ -18,7 +18,7 @@ const Works = () => {
                         <Heading style={{ marginBottom: '40px' }} tag="h2">J'ai travaillé sur</Heading>
                     </Fade>
                 </Col>
-                <Col sm={12} lg={8}>
+                <Col span={24} sm={12} xl={8}>
                     <Fade delay={1000}>
                         <CardWorks 
                             imgSrc={bicloon}
@@ -29,9 +29,8 @@ const Works = () => {
                             expertises={["UX Design", "UI Design"]}
                         />
                     </Fade>
-                    
                 </Col>
-                <Col sm={12} lg={8}>
+                <Col span={24} sm={12} xl={8}>
                     <Fade delay={1500}>
                         <CardWorks 
                             imgSrc={tandem}
@@ -43,26 +42,26 @@ const Works = () => {
                         />
                     </Fade>
                 </Col>
-                <Col sm={12} lg={8}>
+                <Col span={24} sm={12} xl={8}>
                     <Fade delay={2000}>
                         <CardWorks 
                             imgSrc={monument}
                             link="/monument/"
                             imgAlt="miniature monument"
                             title="Monument"
-                            content="Série d’illustration de monuments"
+                            content="Une série d’illustration de monuments"
                             expertises={["UI Design"]}
                         />
                     </Fade>
                 </Col>
-                <Col sm={12} lg={8}>
+                <Col span={24} sm={12} xl={8}>
                     <Fade delay={2000}>
                         <CardWorks 
                             imgSrc={dailyui}
                             link="/dailyui/"
                             imgAlt="miniature dailyui"
                             title="Daily UI"
-                            content="Participation au challenge pour pratiquer le design"
+                            content="Une participation au challenge pour pratiquer le design"
                             expertises={["UX Design", "UI Design"]}
                         />
                     </Fade>

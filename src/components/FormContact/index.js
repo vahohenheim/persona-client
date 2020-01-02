@@ -8,20 +8,37 @@ const { TextArea } = Input;
 
 const FormContact = ({ form }) => {
 
+    const recaptchaRef = React.createRef();
     const { getFieldDecorator } = form
 
     const handleSubmit = e => {
         e.preventDefault();
         form.validateFields((err, values) => {
           if (!err) {
+            let valueRecaptcha = recaptchaRef.current.getValue()
+
             console.log('Received values of form: ', values)
+
+            if (valueRecaptcha) {
+                const xhr = new XMLHttpRequest();
+                xhr.open("POST", "https://formspree.io/xzbzdpkd", true);
+                xhr.setRequestHeader("Accept", "application/json");
+                xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+
+                xhr.onreadystatechange = () => {
+                    if (xhr.readyState !== XMLHttpRequest.DONE) return;
+                    if (xhr.status === 200) {
+                        console.log('success')
+                    } else {
+                        console.log('error')
+                    }
+                };
+
+                xhr.send(JSON.stringify(values));
+            }
           }
         });
     };
-
-    const handleRecaptcha = (value) => {
-        console.log("Captcha value:", value)
-    } 
 
     return (
         <Form style={{  }} onSubmit={handleSubmit} >
@@ -57,8 +74,10 @@ const FormContact = ({ form }) => {
             </Form.Item>
             <Form.Item>
                 <ReCAPTCHA
+                    ref={recaptchaRef}
                     sitekey="6LfW0hwTAAAAAFyvJMIjAfoE8B-FjwAyp4W9nnTT"
-                    onChange={handleRecaptcha}
+                    className={styles.recaptcha}
+                    size="compact"
                 />
             </Form.Item>
             <Form.Item>
