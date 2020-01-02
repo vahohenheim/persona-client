@@ -8,6 +8,8 @@ import scroll from "assets/icons/scroll.svg"
 
 import main from "assets/images/main.jpg"
 
+import cv from "assets/pdf/curriculum-vitae_valentinbourreau_FR_website.pdf"
+
 import styles from './About.module.css'
 
 const About = () => {
@@ -22,7 +24,7 @@ const About = () => {
                         <Link to="contact" spy={true} smooth={true} duration={1000}>
                             <Button className={styles.button}>contactez-moi</Button>
                         </Link>
-                        <Button className={styles.button} type="link">voir mon curriculum vitae</Button>
+                        <Button href={cv} target="_blank" className={styles.button} type="link">voir mon curriculum vitae</Button>
                     </div>
                     <div>
                         <figure className={styles.figure}>

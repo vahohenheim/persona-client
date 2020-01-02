@@ -10,6 +10,8 @@ import editorialIcon from 'assets/icons/editorial.svg'
 import styles from './Expertises.module.css'
 
 import github from "assets/icons/github.svg"
+import dribbble from "assets/icons/dribbble.svg"
+import behance from "assets/icons/behance.svg"
 
 import background from "assets/images/design.png"
 
@@ -24,7 +26,7 @@ const Expertises = () => {
                             <Heading tag="h2">Je développe des interfaces pour de multiples supports</Heading>
                             <p>Après plusieurs années à me chercher et à trouver l’inspiration, j’ai trouvé un domaine qui me correspond par rapport à mes aspirations personnels : le soucis du détail, l’empathie pour les utilisateurs, la logique et les belles réalisations. J’ai découvert le poste de développeur front-end au moment de l’emergence des framework Javascript : React, Angular, Vue. J’ai pu développer mes affinités avec React qui se basait principalement sur la notion de composants. Je me spécialise sur cette technologie depuis ces deux dernières années.</p>
                             <Button href="https://github.com/Ninglight" type="link" target="_blank" className={styles.button} >
-                                <img src={github} alt="Logo github"/>
+                                <img src={github} alt="Logo github" className={styles.button}/>
                                 voir mon travail sur github
                             </Button>
                         </Col>
@@ -75,14 +77,22 @@ const Expertises = () => {
                                     C’est dans l’optique d’approfondir cette reflexion que je me suis réorrienté pour une seconde licence en UI/UX Design et en développement front-end. 
                                     J’ai pu y exercé : Interview, tests utilisateur, zoning, wireframing, prototyping, experience map, mobile first, atomic design, iconographie, support print.
                                 </p>
-                                <Button href="https://dribbble.com/valentinbourreau" target="_blank" type="link" className={styles.button}>voir mes travaux sur dribbble</Button>
-                                <Button href="https://www.behance.net/valentinbourreau" target="_blank" type="link" className={styles.button}>voir mes travaux sur behance</Button>
+                                <Button href="https://dribbble.com/valentinbourreau" target="_blank" type="link" className={styles.button}>
+                                    <img src={dribbble} alt="Logo dribbble"/>
+                                    voir mes travaux sur dribbble
+                                </Button>
+                                <Button href="https://www.behance.net/valentinbourreau" target="_blank" type="link" className={styles.button}>
+                                    <img src={behance} alt="Logo behance"/>
+                                    voir mes travaux sur behance
+                                </Button>
                             </Col>
                         </Fade>
                     </Row>
                 </Container>
                 <Fade right delay={2000}>
-                    <img className={styles.background} src={background} alt="wireframe from sketch" />
+                    <div className={styles.background}>
+                        <img src={background} alt="wireframe from sketch" />
+                    </div>
                 </Fade>
             </div>
             <div className={styles.wrapper}>
