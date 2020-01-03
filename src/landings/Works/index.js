@@ -8,6 +8,11 @@ import monument from 'assets/images/monument.jpg'
 import tandem from 'assets/images/tandem.jpg'
 import dailyui from 'assets/images/dailyui.jpg'
 
+import iconBicloon from 'assets/icons/bicloon.svg'
+import iconMonument from 'assets/icons/monument.svg'
+import iconTandem from 'assets/icons/tandem.svg'
+import iconUitraining from 'assets/icons/ui-training.svg'
+
 const Works = () => {
 
     return (
@@ -22,9 +27,9 @@ const Works = () => {
                     <Fade delay={1000}>
                         <CardWorks 
                             imgSrc={bicloon}
+                            icon={iconBicloon}
                             link="/bicloon/"
                             imgAlt="miniature bicloon"
-                            title="Bicloon"
                             content="Une appli de location de vélo et guide touristique sur Nantes"
                             expertises={["UX Design", "UI Design"]}
                         />
@@ -34,9 +39,9 @@ const Works = () => {
                     <Fade delay={1500}>
                         <CardWorks 
                             imgSrc={tandem}
+                            icon={iconTandem}
                             link="/tandem/"
                             imgAlt="miniature tandem"
-                            title="Tandem"
                             content="Un site éditorial pour une association"
                             expertises={["UX Design", "UI Design", "Développement Wordpress"]}
                         />
@@ -46,9 +51,9 @@ const Works = () => {
                     <Fade delay={2000}>
                         <CardWorks 
                             imgSrc={monument}
+                            icon={iconMonument}
                             link="/monument/"
                             imgAlt="miniature monument"
-                            title="Monument"
                             content="Une série d’illustration de monuments"
                             expertises={["UI Design"]}
                         />
@@ -58,9 +63,9 @@ const Works = () => {
                     <Fade delay={2000}>
                         <CardWorks 
                             imgSrc={dailyui}
-                            link="/dailyui/"
+                            icon={iconUitraining}
+                            link="/uitraining/"
                             imgAlt="miniature dailyui"
-                            title="Daily UI"
                             content="Une participation au challenge pour pratiquer le design"
                             expertises={["UX Design", "UI Design"]}
                         />

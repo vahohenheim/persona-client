@@ -1,5 +1,5 @@
 export { default as About } from './About'
-export { default as Bicloon } from './Bicloon'
+export { default as DetailsWorks } from './DetailsWorks'
 export { default as Contact } from './Contact'
 export { default as Expertises } from './Expertises'
 export { default as Works } from './Works'

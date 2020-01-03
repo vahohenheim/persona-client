@@ -11,9 +11,9 @@ const Index = () => {
 
     return (
         <StickyContainer style={{ position: 'relative' }}>
-            <SEO title="Bicloon" description="Lorem ipsum sit dolor amet" />
+            <SEO title="Monument" description="Lorem ipsum sit dolor amet" />
             <Header />
-            <DetailsWorks.Bicloon />
+            <DetailsWorks.Monument />
             <Footer />
         </StickyContainer>
     )
