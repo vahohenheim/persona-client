@@ -1,0 +1,193 @@
+.container {
+    margin: 20px auto 20px auto;
+}
+
+.title {
+    width: 50%;
+    z-index: 2;
+}
+
+.banner {
+    position: relative;
+    background: white;
+    margin: 20px 0;
+    height: calc(100vh - 150px);
+    border-radius: 20px;
+    z-index: -1;
+}
+
+.title {
+    position: relative;
+    z-index: 2;
+    padding: 50px;
+}
+
+.bicloon {
+    background: linear-gradient(135deg, rgba(121,240,255,1) 0%, rgba(55,255,188,1) 100%);
+}
+
+.monument {
+    background: linear-gradient(135deg, #FFECDF 0%, #FFBE87 100%);
+}
+
+.tandem {
+    background: linear-gradient(135deg, #B7DEFF 0%, #43AAFF 100%);
+}
+
+.uitraining {
+    background: linear-gradient(135deg, #9AC1FE 0%, #3076FF 100%);
+}
+
+.skin {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 70%;
+}
+
+.pattern {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.example {
+    position: absolute;
+    bottom: 70px;
+    right: 20px;
+    width: 600px;
+}
+
+.mainScreenshot {
+    z-index: 1;
+    position: absolute;
+    bottom: 70px;
+    right: 20px;
+    width: 400px;
+}
+
+.subtitle {
+    text-transform: uppercase;
+    opacity: 0.7;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.7px;
+    line-height: 24px;
+    color: #343434;
+    margin-bottom: 3px;
+}
+
+.shortDescription {
+    font-weight: 700;
+    font-size: 24px;
+    color: #000000;
+    line-height: 32px;
+}
+
+.scrollDirection {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.scrollDirection p {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15px;
+    margin: 0;
+}
+
+.screenshot {
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 20px;
+    box-shadow: 0 0px 10px 0 rgba(0,0,0,0.15);
+}
+
+.illustration {
+    margin: 50px 0;
+}
+
+.visualIllustration {
+    width: 100%;
+}
+
+.titleIllustration {
+    margin: 10px 0;
+    width: 100%;
+}
+
+.back {
+    font-weight: 600;
+}
+
+.header {
+    margin-top: 100px;
+}
+
+.row {
+    margin: 30px auto;
+}
+
+.mainImg {
+    height: 300px;
+    margin-bottom: 40px;
+}
+
+.card {
+    height: 200px;
+    background-color: rgba(0,0, 0, .06);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 20px 0;
+}
+
+@media only screen and (max-width: 1200px) {
+    .example {
+        width: 500px;
+    }    
+}
+
+@media only screen and (max-width: 992px) {
+    .example {
+        width: 400px;
+    }    
+}
+
+@media only screen and (max-width: 768px) {
+    .title {
+        width: 100%;
+    }
+
+    .example {
+        width: 300px;
+    }    
+
+    .card {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .mainScreenshot {
+        width: 200px;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .example {
+        width: 200px;
+    }    
+}
