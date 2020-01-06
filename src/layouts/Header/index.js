@@ -1,6 +1,7 @@
 import React from 'react'
 import { Sticky } from 'react-sticky'
 import { Link } from 'react-scroll'
+import { Link as LinkGatsby } from 'gatsby'
 import Fade from 'react-reveal/Fade'
 
 import styles from './Header.module.css'
@@ -13,7 +14,9 @@ const Header = () => {
         <Sticky>{({ style }) => (
             <header style={style} className={styles.container} >
                 <Fade delay={1000}>
-                    <img src={logo} alt="logo valentinbourreau" />
+                    <LinkGatsby to="/">
+                        <img src={logo} alt="logo valentinbourreau" />
+                    </LinkGatsby>
                 </Fade>
                 <Fade delay={1500}>
                     <ul className={styles.navigation}>

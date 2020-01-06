@@ -1,7 +1,6 @@
 import React from 'react'
-import { Link as LinkGatsby } from 'gatsby'
 import { Row, Col } from 'antd'
-import { Heading, Container } from 'components'
+import { Heading, Container, BackButton } from 'components'
 import Fade from 'react-reveal/Fade'
 
 import pattern from "assets/images/uitraining/pattern.png"
@@ -31,10 +30,7 @@ const UITraining = () => {
             <Fade delay={2000}>
                 <Row className={styles.details}>
                     <Col span={24}>
-                        <LinkGatsby className={styles.back} to="/#works">
-                            <svg width="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M11.29,12l3.54-3.54a1,1,0,0,0,0-1.41,1,1,0,0,0-1.42,0L9.17,11.29a1,1,0,0,0,0,1.42L13.41,17a1,1,0,0,0,.71.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41Z"/></svg>
-                            Précédent
-                        </LinkGatsby>
+                        <BackButton to="/#works"/>
                     </Col>
                 </Row>
             </Fade>
@@ -57,7 +53,7 @@ const UITraining = () => {
                     </Col>
                 </Row>
             </Fade>
-            <Fade delay={2000}>
+            <Fade delay={1000}>
                 <Row type="flex" justify="center" className={styles.row}>
                     <Col sm={18}>
                         <p>Afin de me former à l’UI Design, j’ai pu m’exercer à des Daily UI. Ce challenge est un outil parfait pour apprendre du design et de s’entraîner par l’exercice, technique ayant fait ces preuves depuis la nuit des temps. Le but était de m’exercer à l’utilisation de Sketch. Cela m’a permis d’y découvrir les fonctionnalités et de les maîtriser pour gagner en temps de réalisation.</p>
@@ -65,98 +61,98 @@ const UITraining = () => {
                     </Col>
                 </Row>
             </Fade>
-            <Fade delay={1500}>
+            <Fade delay={1000}>
                 <Row type="flex" justify="center" className={styles.row}>
                     <Col sm={18}>
                         <img className={styles.screenshot} src={screenshot1} alt="Screenshot n°1"/>
                     </Col>
                 </Row>
             </Fade>
-            <Fade delay={1500}>
+            <Fade delay={1000}>
                 <Row type="flex" justify="center" className={styles.row}>
                     <Col sm={18}>
                         <img className={styles.screenshot} src={screenshot2} alt="Screenshot n°2"/>
                     </Col>
                 </Row>
             </Fade>
-            <Fade delay={1500}>
+            <Fade delay={1000}>
                 <Row type="flex" justify="center" className={styles.row}>
                     <Col sm={18}>
                         <img className={styles.screenshot} src={screenshot3} alt="Screenshot n°3"/>
                     </Col>
                 </Row>
             </Fade>
-            <Fade delay={1500}>
+            <Fade delay={1000}>
                 <Row type="flex" justify="center" className={styles.row}>
                     <Col sm={18}>
                         <img className={styles.screenshot} src={screenshot4} alt="Screenshot n°4"/>
                     </Col>
                 </Row>
             </Fade>
-            <Fade delay={1500}>
+            <Fade delay={1000}>
                 <Row type="flex" justify="center" className={styles.row}>
                     <Col sm={18}>
                         <img className={styles.screenshot} src={screenshot5} alt="Screenshot n°5"/>
                     </Col>
                 </Row>
             </Fade>
-            <Fade delay={1500}>
+            <Fade delay={1000}>
                 <Row type="flex" justify="center" className={styles.row}>
                     <Col sm={18}>
                         <img className={styles.screenshot} src={screenshot6} alt="Screenshot n°6"/>
                     </Col>
                 </Row>
             </Fade>
-            <Fade delay={1500}>
+            <Fade delay={1000}>
                 <Row type="flex" justify="center" className={styles.row}>
                     <Col sm={18}>
                         <img className={styles.screenshot} src={screenshot7} alt="Screenshot n°7"/>
                     </Col>
                 </Row>
             </Fade>
-            <Fade delay={1500}>
+            <Fade delay={1000}>
                 <Row type="flex" justify="center" className={styles.row}>
                     <Col sm={18}>
                         <img className={styles.screenshot} src={screenshot8} alt="Screenshot n°8"/>
                     </Col>
                 </Row>
             </Fade>
-            <Fade delay={1500}>
+            <Fade delay={1000}>
                 <Row type="flex" justify="center" className={styles.row}>
                     <Col sm={18}>
                         <img className={styles.screenshot} src={screenshot9} alt="Screenshot n°9"/>
                     </Col>
                 </Row>
             </Fade>
-            <Fade delay={1500}>
+            <Fade delay={1000}>
                 <Row type="flex" justify="center" className={styles.row}>
                     <Col sm={18}>
                         <img className={styles.screenshot} src={screenshot10} alt="Screenshot n°10"/>
                     </Col>
                 </Row>
             </Fade>
-            <Fade delay={1500}>
+            <Fade delay={1000}>
                 <Row type="flex" justify="center" className={styles.row}>
                     <Col sm={18}>
                         <img className={styles.screenshot} src={screenshot11} alt="Screenshot n°11"/>
                     </Col>
                 </Row>
             </Fade>
-            <Fade delay={1500}>
+            <Fade delay={1000}>
                 <Row type="flex" justify="center" className={styles.row}>
                     <Col sm={18}>
                         <img className={styles.screenshot} src={screenshot12} alt="Screenshot n°12"/>
                     </Col>
                 </Row>
             </Fade>
-            <Fade delay={1500}>
+            <Fade delay={1000}>
                 <Row type="flex" justify="center" className={styles.row}>
                     <Col sm={18}>
                         <img className={styles.screenshot} src={screenshot13} alt="Screenshot n°13"/>
                     </Col>
                 </Row>
             </Fade>
-            <Fade delay={1500}>
+            <Fade delay={1000}>
                 <Row type="flex" justify="center" className={styles.row}>
                     <Col sm={18}>
                         <img className={styles.screenshot} src={screenshot14} alt="Screenshot n°14"/>

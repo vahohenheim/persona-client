@@ -42,6 +42,10 @@
     font-size: 12px;
 }
 
+.title {
+    padding-right: 20px;
+}
+
 .highlight {
     color: #D9BAA4;
 }
@@ -49,7 +53,38 @@
 .button {
     margin-top: 10px;
     margin-right: 10px;
+    font-weight: 500;
 }
+
+
+@media only screen and (max-width: 992px) {
+    .wrapper {
+        display: flex;
+        flex-direction: column-reverse;
+    }    
+
+    .figure {
+        width: 90%;
+        height: 280px;
+        text-align: right;
+        margin-right: 0;
+        margin-left: auto;
+        margin-bottom: 30px
+    }
+
+    .container {
+        padding: 20px 0 0 0;
+    }
+
+    .containerScroll {
+        display: none;
+    }
+
+    .title {
+        margin: 0 30px;
+    }
+}
+
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
