@@ -10,7 +10,7 @@ import 'assets/fonts/styles.css'
 
 config({ ssrFadeout: true })
 
-const Index = () => {
+const Index = ({ location }) => {
 
     return (
         <StickyContainer style={{ position: 'relative' }}>
@@ -19,7 +19,7 @@ const Index = () => {
             <About />
             <Expertises />
             <Works />
-            <Contact />
+            <Contact location={location} />
             <Footer />
         </StickyContainer>
     )

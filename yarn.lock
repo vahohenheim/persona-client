@@ -687,6 +687,12 @@
   dependencies:
     regenerator-runtime "^0.13.2"
 
+"@babel/runtime@^7.7.6":
+  version "7.7.7"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.7.7.tgz#194769ca8d6d7790ec23605af9ee3e42a0aa79cf"
+  dependencies:
+    regenerator-runtime "^0.13.2"
+
 "@babel/template@^7.7.0":
   version "7.7.0"
   resolved "https://registry.yarnpkg.com/@babel/template/-/template-7.7.0.tgz#4fadc1b8e734d97f56de39c77de76f2562e597d0"
@@ -4245,6 +4251,13 @@ gatsby-plugin-antd@^2.1.0:
   dependencies:
     antd "^3.25.0"
     babel-plugin-import "^1.12.0"
+
+gatsby-plugin-google-gtag@^1.1.19:
+  version "1.1.19"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-gtag/-/gatsby-plugin-google-gtag-1.1.19.tgz#e1676e376fbe47c8550e88d5a5d41a3995f7cbb2"
+  dependencies:
+    "@babel/runtime" "^7.7.6"
+    minimatch "^3.0.4"
 
 gatsby-plugin-less@^3.0.15:
   version "3.0.15"
