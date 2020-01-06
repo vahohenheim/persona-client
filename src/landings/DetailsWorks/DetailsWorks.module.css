@@ -11,7 +11,7 @@
     position: relative;
     background: white;
     margin: 20px 0;
-    height: calc(100vh - 150px);
+    height: calc(100vh - 300px);
     border-radius: 20px;
     z-index: -1;
 }
@@ -36,6 +36,18 @@
 
 .uitraining {
     background: linear-gradient(135deg, #9AC1FE 0%, #3076FF 100%);
+}
+
+.mygoodplace {
+    background: linear-gradient(135deg, #899FD6 0%, #FF8DB1 100%);
+}
+
+.sowesign {
+    background: linear-gradient(135deg, #AAD3FF 0%, #3C82CE 100%);
+}
+
+.edycem {
+    background: linear-gradient(135deg, #CEED5D 0%, #0083B9 100%);
 }
 
 .skin {
@@ -63,7 +75,7 @@
     z-index: 1;
     position: absolute;
     bottom: 70px;
-    right: 20px;
+    right: 50px;
     width: 400px;
 }
 
@@ -119,10 +131,6 @@
 .titleIllustration {
     margin: 10px 0;
     width: 100%;
-}
-
-.back {
-    font-weight: 600;
 }
 
 .header {
@@ -183,6 +191,10 @@
         right: 0;
         left: 0;
         margin: 0 auto;
+    }
+
+    .banner {
+        height: calc(100vh - 150px);
     }
 }
 

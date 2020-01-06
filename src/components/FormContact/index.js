@@ -8,41 +8,11 @@ const { TextArea } = Input;
 
 const FormContact = ({ form }) => {
 
-    const recaptchaRef = React.createRef();
     const { getFieldDecorator } = form
 
-    const handleSubmit = e => {
-        e.preventDefault();
-        form.validateFields((err, values) => {
-          if (!err) {
-            let valueRecaptcha = recaptchaRef.current.getValue()
-
-            console.log('Received values of form: ', values)
-
-            if (valueRecaptcha) {
-                const xhr = new XMLHttpRequest();
-                xhr.open("POST", "https://formspree.io/xzbzdpkd", true);
-                xhr.setRequestHeader("Accept", "application/json");
-                xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-
-                xhr.onreadystatechange = () => {
-                    if (xhr.readyState !== XMLHttpRequest.DONE) return;
-                    if (xhr.status === 200) {
-                        console.log('success')
-                    } else {
-                        console.log('error')
-                    }
-                };
-
-                xhr.send(JSON.stringify(values));
-            }
-          }
-        });
-    };
-
     return (
-        <Form style={{  }} onSubmit={handleSubmit} >
-            <Form.Item label="Votre nom" hasFeedback>
+        <form action="/" className={styles.form} netlify>
+            <Form.Item label="Votre nom" hasFeedback >
                 {getFieldDecorator('name', {
                     rules: [{ required: true, message: "Renseignez un nom, s'il vous plait" }],
                 })(
@@ -73,19 +43,11 @@ const FormContact = ({ form }) => {
                 )}
             </Form.Item>
             <Form.Item>
-                <ReCAPTCHA
-                    ref={recaptchaRef}
-                    sitekey="6LfW0hwTAAAAAFyvJMIjAfoE8B-FjwAyp4W9nnTT"
-                    className={styles.recaptcha}
-                    size="compact"
-                />
-            </Form.Item>
-            <Form.Item>
                 <Button type="primary" htmlType="submit" size="large" block>
                     Envoyer votre message
                 </Button>
             </Form.Item>
-        </Form>
+        </form>
     )
 
 } 
