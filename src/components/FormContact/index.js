@@ -46,7 +46,7 @@ const FormContact = ({ form, location }) => {
         <>
             {feedbackMsg && <p>{feedbackMsg}</p>}
 
-            <form ref={domRef} name="contact" data-netlify="true" form action="/" method="POST" className={styles.form} onSubmit={handleSubmit}>
+            <form ref={domRef} name="contact" data-netlify="true" method="POST" className={styles.form} onSubmit={handleSubmit}>
                 <Form.Item label="Votre nom" hasFeedback >
                     {getFieldDecorator('name', {
                         rules: [{ required: true, message: "Renseignez un nom, s'il vous plait" }],
