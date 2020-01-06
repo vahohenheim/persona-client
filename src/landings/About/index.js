@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-scroll'
-import { Row, Col, Button } from 'antd'
+import { Row, Button } from 'antd'
 import { Heading, Container } from 'components'
 import Fade from 'react-reveal/Fade'
 

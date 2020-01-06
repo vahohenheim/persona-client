@@ -3,7 +3,7 @@ import { Row, Col } from 'antd'
 import Fade from 'react-reveal/Fade'
 import { Heading, Container, FormContact } from 'components'
 
-const Contact = () => {
+const Contact = ({ location }) => {
 
     return (
         <Container>
@@ -14,7 +14,7 @@ const Contact = () => {
                         <p>Si vous avez un projet, une opportunité pour moi ou juste pour parler, contactez-moi.</p>
                     </Col>
                     <Col span={24} lg={16}>
-                        <FormContact />
+                        <FormContact location={location} />
                     </Col>
                 </Row>
             </Fade>
