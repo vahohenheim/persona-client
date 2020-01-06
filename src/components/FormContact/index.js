@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Form, Input, Button } from 'antd'
+import { Messages } from 'components'
 import ReCAPTCHA from 'react-google-recaptcha'
 import axios from "axios"
 import * as qs from "query-string"
@@ -11,6 +12,7 @@ const { TextArea } = Input;
 const FormContact = ({ form, location }) => {
 
     const domRef = React.createRef()
+    const recaptchaRef = React.createRef()
     const [feedbackMsg, setFeedbackMsg] = useState(null);
 
     const { getFieldDecorator } = form
@@ -21,32 +23,36 @@ const FormContact = ({ form, location }) => {
         let formData = {}
         form.validateFields((err, values) => {
             if (!err) {
-              formData = values;
+                formData = values;
+
+                console.log(location.pathname)
+
+                const axiosOptions = {
+                    url: location.pathname,
+                    method: "post",
+                    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                    data: qs.stringify(formData),
+                }
+        
+                axios(axiosOptions)
+                    .then(response => {
+                        setFeedbackMsg(<Messages type="sucess"/>)
+                        domRef.current.reset()
+                    })
+                    .catch(err =>
+                        setFeedbackMsg(<Messages type="error"/>)
+                    )
             }
         });
       
-        const axiosOptions = {
-          url: location.pathname,
-          method: "post",
-          headers: { "Content-Type": "application/x-www-form-urlencoded" },
-          data: qs.stringify(formData),
-        }
-
-        axios(axiosOptions)
-          .then(response => {
-            setFeedbackMsg("Form submitted successfully!")
-            domRef.current.reset()
-          })
-          .catch(err =>
-            setFeedbackMsg("Form could not be submitted.")
-        )
+        
     }
 
     return (
         <>
             {feedbackMsg && <p>{feedbackMsg}</p>}
 
-            <form ref={domRef} name="contact" data-netlify="true" method="POST" className={styles.form} onSubmit={handleSubmit}>
+            <form ref={domRef} name="contact" data-netlify="true" data-netlify-recaptcha="true" method="POST" className={styles.form} onSubmit={handleSubmit}>
                 <Form.Item label="Votre nom" hasFeedback >
                     {getFieldDecorator('name', {
                         rules: [{ required: true, message: "Renseignez un nom, s'il vous plait" }],
@@ -76,6 +82,14 @@ const FormContact = ({ form, location }) => {
                     })(
                         <TextArea size="large" rows={6} />,
                     )}
+                </Form.Item>
+                <Form.Item>
+                    <ReCAPTCHA
+                        ref={recaptchaRef}
+                        sitekey="6LfW0hwTAAAAAFyvJMIjAfoE8B-FjwAyp4W9nnTT"
+                        className={styles.recaptcha}
+                        size="compact"
+                    />
                 </Form.Item>
                 <Form.Item>
                     <Button type="primary" htmlType="submit" size="large" block>
