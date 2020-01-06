@@ -116,7 +116,7 @@ const Edycem = () => {
                 </Row>
             </Fade>    
             <Fade delay={1000}>
-                <Row className={styles.row}>
+                <Row type="flex" justify="center" className={styles.row}>
                     <Col sm={18}>
                         <Heading tag="h2">Résultat</Heading>
                     </Col>
