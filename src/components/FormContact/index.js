@@ -13,6 +13,7 @@ const FormContact = ({ form, location }) => {
 
     const domRef = React.createRef()
     const recaptchaRef = React.createRef()
+    const [recaptcha, setRecaptcha] = useState(false);
     const [feedbackMsg, setFeedbackMsg] = useState(null);
 
     const { getFieldDecorator } = form
@@ -48,11 +49,17 @@ const FormContact = ({ form, location }) => {
         
     }
 
+    const handleRecaptcha = (value) => {
+        console.log(value)
+        setRecaptcha(recaptchaRef.current.getValue())
+    }
+
     return (
         <>
-            {feedbackMsg && <p>{feedbackMsg}</p>}
-
-            <form ref={domRef} name="contact" data-netlify="true" data-netlify-recaptcha="true" method="POST" className={styles.form} onSubmit={handleSubmit}>
+            <div className={styles.messages}>
+                {feedbackMsg && <p>{feedbackMsg}</p>}
+            </div>
+            <form ref={domRef} action="/success" name="contact" data-netlify="true" data-netlify-recaptcha="true" method="POST" className={styles.form}>
                 <input type="hidden" name="form-name" value="contact" />
                 <Form.Item label="Votre nom" hasFeedback >
                     {getFieldDecorator('name', {
@@ -90,10 +97,11 @@ const FormContact = ({ form, location }) => {
                         sitekey="6LfW0hwTAAAAAFyvJMIjAfoE8B-FjwAyp4W9nnTT"
                         className={styles.recaptcha}
                         size="compact"
+                        onChange={handleRecaptcha}
                     />
                 </Form.Item>
                 <Form.Item>
-                    <Button type="primary" htmlType="submit" size="large" block>
+                    <Button type="primary" htmlType="submit" size="large" disabled={!recaptcha} block>
                         Envoyer votre message
                     </Button>
                 </Form.Item>
